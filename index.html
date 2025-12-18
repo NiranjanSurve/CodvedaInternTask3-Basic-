@@ -1,0 +1,84 @@
+<!--
+    Task 3: 
+          Introduction to JavaScript 
+    Description:
+           Add basic interactivity to a webpage using JavaScript. 
+    Objectives: 
+           Create interactive elements like dropdowns, modals, and forms.
+           Write basic JavaScript functions and event listeners.
+           Validate form inputs using JavaScript.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Interactive Webpage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>JavaScript Interactivity Demo</h1>
+<p class="subtitle">Codveda Internship – Task 3</p>
+
+<!-- DROPDOWN NAVIGATION -->
+<section class="card">
+  <h2>Dropdown Navigation</h2>
+  <button id="dropdownBtn">Toggle Menu</button>
+
+  <ul id="dropdownMenu" class="dropdown">
+    <li><a href="#" data-target="home">Home</a></li>
+    <li><a href="#" data-target="about">About</a></li>
+    <li><a href="#" data-target="services">Services</a></li>
+    <li><a href="#" data-target="contact">Contact</a></li>
+  </ul>
+</section>
+
+<!-- CONTENT SECTIONS (HIDDEN INITIALLY) -->
+<section id="home" class="card content-card">
+  <h2>Home</h2>
+  <p>This is the home section of the interactive webpage.</p>
+</section>
+
+<section id="about" class="card content-card">
+  <h2>About</h2>
+  <p>This project demonstrates JavaScript-based UI interactions.</p>
+</section>
+
+<section id="services" class="card content-card">
+  <h2>Services</h2>
+  <p>Dropdowns, modals, and form validation using JavaScript.</p>
+</section>
+
+<section id="contact" class="card content-card">
+  <h2>Contact</h2>
+  <p>Please use the contact form below to reach out.</p>
+</section>
+
+<!-- MODAL -->
+<section class="card">
+  <h2>Modal Popup</h2>
+  <button id="openModalBtn">Open Modal</button>
+</section>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close">&times;</span>
+    <h3>Welcome!</h3>
+    <p>This modal is controlled using JavaScript event listeners.</p>
+  </div>
+</div>
+
+<!-- FORM -->
+<section class="card">
+  <h2>Contact Form</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <button type="submit">Submit</button>
+    <p id="message"></p>
+  </form>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
