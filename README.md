@@ -1,5 +1,6 @@
 # CodvedaInternTask3-Basic
 Task 3: Introduction to JavaScript 
+Direct Access to the Site :- https://niranjansurve.github.io/CodvedaInternTask3-Basic-/
 
 ## Project Title
 Introduction to JavaScript – Basic Interactivity
